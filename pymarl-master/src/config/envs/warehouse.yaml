@@ -1,0 +1,23 @@
+env: warehouse
+
+env_args:
+  scenario: "rware-small"
+  n_agents: 2
+  difficulty: "none"
+  episode_limit: 500
+  render: False
+  add_agent_id: False
+
+# change value for speed up
+learner_log_interval: 150000
+log_interval: 150000
+runner_log_interval: 150000
+test_interval: 150000
+demo_interval: 150000
+
+t_max: 10050000 # 10,050,000
+test_nepisode: 20
+test_greedy: True
+
+agent: "sep_transformer"
+obs_agent_id: False

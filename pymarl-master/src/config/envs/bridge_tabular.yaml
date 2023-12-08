@@ -1,0 +1,20 @@
+env: bridge_tabular
+
+env_args:
+  n_agents: 2 # TODO: 3+ agents
+  n_actions: 5
+  reward_win: 1
+  episode_limit: 100
+  obs_last_action: False
+  state_last_action: False
+  print_rew: False
+  is_print: False
+  print_steps: 1000
+  tabular_states: True
+learner_log_interval: 20000
+log_interval: 20000
+runner_log_interval: 20000
+t_max: 20050000
+test_interval: 20000
+test_nepisode: 30
+demo_interval: 20000

@@ -1,0 +1,31 @@
+env: bridge
+
+env_args:
+  n_agents: 2
+  n_actions: 5
+  episode_limit: 20
+  obs_last_action: False
+  state_last_action: False
+  print_rew: False
+  is_print: False
+  print_steps: 1000
+  tabular_states: False
+  render: False
+  start_adjacent: True
+
+learner_log_interval: 100000
+log_interval: 100000
+runner_log_interval: 100000
+test_interval: 100000
+demo_interval: 100000
+
+t_max: 3100000
+test_nepisode: 100
+test_greedy: False
+
+agent: "sep_mlp"
+obs_agent_id: False
+
+batch_size: 128
+standardize_obs: False
+standardize_reward: False

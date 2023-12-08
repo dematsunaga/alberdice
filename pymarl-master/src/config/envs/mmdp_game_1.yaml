@@ -1,0 +1,31 @@
+env: mmdp_game_1
+
+env_args:
+  n_agents: 2
+  n_actions: 2
+  reward_win: 1
+  episode_limit: 100
+  obs_last_action: False
+  state_last_action: False
+  print_rew: False
+  is_print: False
+  print_steps: 1000
+  matrix_game: True
+  plus_reward_00: False # the action 0, 0 also has positive reward
+
+learner_log_interval: 50000
+log_interval: 50000
+runner_log_interval: 50000
+test_interval: 50000
+demo_interval: 50000
+
+t_max: 1100000
+test_nepisode: 100
+test_greedy: False
+
+agent: "sep_mlp"
+obs_agent_id: False
+
+batch_size: 16
+standardize_obs: False
+standardize_reward: False
